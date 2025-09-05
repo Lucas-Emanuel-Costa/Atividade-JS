@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Aprovação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de Aprovação</h1>
+        <form id="formularioAprovacao">
+            <label for="nota1">Primeira Nota:</label>
+            <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.1" required>
+
+            <label for="nota2">Segunda Nota:</label>
+            <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.1" required>
+            
+            <label for="faltas">Número de Faltas:</label>
+            <input type="number" id="faltas" name="faltas" min="0" required>
+            
+            <button type="submit">Verificar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
